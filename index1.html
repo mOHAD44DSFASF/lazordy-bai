@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قرية لازوردي باي بمرسى مطروح</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .hero-section {
+            background: url('img/1.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(16, 44, 87, 0.7);
+            z-index: -1;
+        }
+        .hero-section h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #FFCBCB;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .section {
+            padding: 60px 20px;
+        }
+        .bg-lightblue {
+            background-color: #1679AB;
+            color: #fff;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #FFCBCB;
+        }
+        .feature-box p {
+            color: #1679AB;
+        }
+        .footer {
+            background-color: #102C57;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #102C57;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #FFB1B1 !important;
+        }
+        .feature-box {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        .img-gallery {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .img-gallery:hover {
+            transform: scale(1.05);
+        }
+        .contact-form input, .contact-form textarea {
+            border-radius: 10px;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #102C57;
+        }
+        .section-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #FFB1B1;
+        }
+        .btn-primary {
+            background-color: #FFB1B1;
+            border-color: #FFB1B1;
+        }
+        .btn-primary:hover {
+            background-color: #FFCBCB;
+            border-color: #FFCBCB;
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            border-color: #25D366;
+            color: #fff;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1EBB60;
+            border-color: #1EBB60;
+        }
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            .hero-section p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">قرية لازوردي باي</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">عن القرية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">معرض الصور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">التقييمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">الموقع</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h1 class="animate__animated animate__fadeInDown">مرحبًا بكم في قرية لازوردي باي</h1>
+            <p class="lead animate__animated animate__fadeInUp">استمتع بأفضل العطلات معنا</p>
+            <a href="https://wa.me/201553598177" class="btn btn-whatsapp mt-3 animate__animated animate__fadeInUp">تواصل معنا عبر واتساب</a>
+            <a href="#about" class="btn btn-primary mt-3 animate__animated animate__fadeInUp">اكتشف المزيد</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">عن قرية لازوردي باي</h2>
+                <p class="section-subtitle">اكتشف المزيد عن القرية وأجوائها الرائعة.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <p>قرية لازوردي باي هي وجهتك المثالية لقضاء عطلة لا تنسى في مرسى مطروح. نقدم لك تجربة فاخرة وممتعة مع مجموعة واسعة من الأنشطة والخدمات.</p>
+                    <ul>
+                        <li>موقع ساحر على البحر الأبيض المتوسط.</li>
+                        <li>إقامة فاخرة في شاليهات وغرف فندقية.</li>
+                        <li>أنشطة رياضية وترفيهية متنوعة.</li>
+                        <li>مطاعم تقدم أشهى الأطباق المحلية والعالمية.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="img/2.jpg" alt="Resort Image" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-lightblue">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">خدماتنا</h2>
+                <p class="section-subtitle">نقدم مجموعة متنوعة من الخدمات لتلبية جميع احتياجاتك.</p>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="feature-box">
+                        <i class="fas fa-swimming-pool feature-icon"></i>
+                        <h3>حمامات سباحة</h3>
+                        <p>استمتع بالسباحة في حمامات السباحة الفاخرة لدينا. نوفر لك تجربة سباحة ممتعة ومريحة لجميع أفراد الأسرة.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="feature-box">
+                        <i class="fas fa-spa feature-icon"></i>
+                        <h3>منتجع صحي</h3>
+                        <p>استرخِ واستمتع بجلسات العناية في منتجعنا الصحي. نقدم لك مجموعة متنوعة من العلاجات الصحية والتجميلية.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="feature-box">
+                        <i class="fas fa-utensils feature-icon"></i>
+                        <h3>مطاعم فاخرة</h3>
+                        <p>تذوق أشهى الأطباق في مطاعمنا المتنوعة. نقدم لك تجربة طعام مميزة مع نكهات محلية وعالمية تلبي جميع الأذواق.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="feature-box">
+                        <i class="fas fa-dumbbell feature-icon"></i>
+                        <h3>مركز لياقة بدنية</h3>
+                        <p>حافظ على لياقتك البدنية مع مجموعة متنوعة من الأجهزة الرياضية في مركز اللياقة البدنية لدينا.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="feature-box">
+                        <i class="fas fa-child feature-icon"></i>
+                        <h3>منطقة لعب للأطفال</h3>
+                        <p>استمتع بوقت ممتع مع أطفالك في منطقة اللعب المخصصة لهم والتي تحتوي على العديد من الألعاب الترفيهية.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="feature-box">
+                        <i class="fas fa-wifi feature-icon"></i>
+                        <h3>إنترنت مجاني</h3>
+                        <p>تمتع بخدمة الإنترنت المجانية في جميع أنحاء القرية لتبقى متصلاً مع العالم خلال عطلتك.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">معرض الصور</h2>
+                <p class="section-subtitle">استعرض بعض الصور الجميلة لقرية لازوردي باي.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <img src="img/3.jpg" alt="Beach" class="img-gallery">
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <img src="img/9.jpg" alt="Hotel" class="img-gallery">
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <img src="img/5.jpg" alt="Restaurant" class="img-gallery">
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <img src="img/6.jpg" alt="Pool" class="img-gallery">
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <img src="img/7.jpg" alt="Spa" class="img-gallery">
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <img src="img/8.jpg" alt="Fitness" class="img-gallery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">التقييمات</h2>
+                <p class="section-subtitle">اطلع على تقييمات نزلائنا وتجاربهم في قرية لازوردي باي.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-box">
+                        <p>"تجربة رائعة! المكان جميل والخدمات ممتازة. أنصح الجميع بزيارة قرية لازوردي باي."</p>
+                        <h5>- محمد علي</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-box">
+                        <p>"أفضل عطلة قضيتها في حياتي. الموظفون ودودون والمرافق رائعة. سأعود بالتأكيد!"</p>
+                        <h5>- سارة أحمد</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-box">
+                        <p>"مكان مثالي لقضاء إجازة هادئة وممتعة مع العائلة. الخدمات ممتازة والمناظر طبيعية خلابة."</p>
+                        <h5>- أحمد خالد</h5>
+                    </div>
+                    <a href="https://wa.me/201553598177" class="btn btn-whatsapp mt-3">تواصل معنا عبر واتساب</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-lightblue">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">اتصل بنا</h2>
+                <p class="section-subtitle">نحن هنا لمساعدتك. تواصل معنا الآن.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="fade-up">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">الاسم</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">الرسالة</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال</button>
+                    </form>
+                    <a href="https://wa.me/201553598177" class="btn btn-whatsapp mt-3">تواصل معنا عبر واتساب</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">الموقع</h2>
+                <p class="section-subtitle">تعرف على موقع قرية لازوردي باي من خلال خريطة جوجل.</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109523.18875136174!2d28.936109434333282!3d30.925812845341884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145fee0d6a0af063%3A0xc374841b4b91e8b7!2sLazorde%20bay!5e0!3m2!1sar!2seg!4v1718368868277!5m2!1sar!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 قرية لازوردي باي. جميع الحقوق محفوظة.</p>
+        <a href="https://wa.me/201143239685" class="btn btn-whatsapp">برمجة دهب للخدمات الإلكترونية</a>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+</html>
